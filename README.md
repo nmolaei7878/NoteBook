@@ -45,7 +45,40 @@ for non-primitive data types set of proccess will going on to coerice them.
  - functions are special type of objects, they have call method on them.
 
 
+## Hoisting
+  - hoisting is just term and there is nothing such hoist exsist in javascript.
+  - the term`s hoisting come from how javascript compile and excecute in 2 phase our code.
+  - in compile phase javascript engine will remember variables and function declartion.
+  - in execute phase js-engine will know which variable and function declartion do we have.
+  - beacuse of that we can access variables and function declartions before calling them.
+  - for the var keyword just declartion will hoist, for the functions, declaration and function body will hoist
+  - this behavior for let and const variables are diffrent they are hoist but not accessible they are in temporal dead zone.(TDZ)(accessing variable before declaration)
 
+## Scope
+ - scope is term where we defined our values and accessiblity.
+ - we have 3 scope in javascript
+     - global scope, variables define in global scope are accessible in the the same file from any where.
+     - function scope, variables define in function plus parameters of function.
+     - block scope using { } via let and const.
+   - err from try catch statement is block scope.
+   - scope access is outer to inner.
+   - scope chain is where we define multiple scope level nested each other via functions and {} with let and const.
+   - { } is not a scope, we can make it a block scope using let and const.
+   - lexical scope is author time where we declare function and use which variables in them, outer or inner remembering of outer variable means the lexical scope of that function.
+   - if we define scope chain engine start to look-up for varable from inner to outer to find variable until it reaches the global scope the first match will use.
+   - in non-strict-mode if js cant find a variable and reaches to the global scope, global scope will create that variable on the fly and passed it to function.
+   - function declaritions are belong to the scope where the defined but parameters of a function belong to the function it self.
+   - dynamic scope is about where function get invoked and lexical scope is where function declared.
+
+## Modules
+  - module is when we hide behavior(method) and state(data) and limit the access to other parts of code.
+  - in ES6 modules add as first-class syntax using export/import 
+  - in ES6 every file is module.
+  - we can create module without ES6 syntax.
+    
+## Closure
+  - closure is a term where function can remember adn access the outer variables. (lexical scope).
+  - but just the declaration not values of them.
 
 
 
