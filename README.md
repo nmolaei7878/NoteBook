@@ -1,4 +1,4 @@
-# JS-Document
+# JS-HandBook
 
 ## Types
 
