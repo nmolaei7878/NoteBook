@@ -61,6 +61,7 @@
     - 2 read from server then add to cache use it in offline mode.
     
  - lazy loding & code splitting ( both routes and components ).
+ - preload components you will need after something.
  - analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
  - if you are using library import functionality from them with named export
  - and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
