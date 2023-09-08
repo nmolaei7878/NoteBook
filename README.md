@@ -60,8 +60,8 @@
     - 1 read from local then check the server.
     - 2 read from server then add to cache use it in offline mode.
     
- - Lazy Loding & Code Splitting
- - Analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
+ - lazy loding & code splitting ( both routes and components ).
+ - analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
  - if you are using library import functionality from them with named export
  - and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
  - use dynamic import components with react-loadable which (load it once and use copy then)
