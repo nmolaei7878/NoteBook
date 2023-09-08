@@ -37,7 +37,8 @@
  - any change to css will trigger paint except changeing opacity or transform.
  - if changing simple things like color your not reflow just repaint.
 
-## Tip 2:
+## Tip 2: Will-Change in CSS
+ - usually using for janky animations.
  - scolling is one the paint causes.
  - if you have sticky header your probeblay repaint it with scrolling.
  - beacuse they are in the same layout.( there other reasons causing to trigger repaint.)
