@@ -1,3 +1,5 @@
+#Dont doing things is faster than doing things
+
 # Javascript-Performance
 ## TypeScript
 
@@ -48,3 +50,6 @@
    - 1 to craete a seperate layout for element that you dont want to repaint.(like sticky header on scrolling).
    - 2 you have to put back will-change to 'auto'.
  - you can check repainting in devtools -> rendering -> paint flashing
+
+
+# Load-Performance
