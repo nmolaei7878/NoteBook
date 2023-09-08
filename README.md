@@ -55,15 +55,14 @@
 
 # Load-Performance
 
-## Cache
- - service worker: your proxy to other worlds.
- - can controll an implement diffrent cache startegies.
+#### Cache (service worker) : your proxy to other worlds.
+    - can controll an implement diffrent cache startegies.
     - 1 read from local then check the server.
     - 2 read from server then add to cache use it in offline mode.
-## Lazy Loding - Code Splitting
-## Analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
-## if you are using library import functionality from them with named export
-and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
-use dynamic import components with react-loadable which (load it once and use copy then)
-you can preload next component with react loadable and import()
-preferd each bundle size is under 300 kilobytes
+#### Lazy Loding & Code Splitting
+#### Analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
+#### if you are using library import functionality from them with named export
+#### and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
+#### use dynamic import components with react-loadable which (load it once and use copy then)
+#### you can preload next component with react loadable and import()
+#### preferd each bundle size is under 300 kilobytes
