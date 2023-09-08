@@ -54,8 +54,9 @@
 
 # Load-Performance
 
-## Caching
+## Cache
  - service worker: your proxy to other worlds.
  - can controll an implement diffrent cache startegies.
     - 1 read from local then check the server.
     - 2 read from server then add to cache use it in offline mode.
+## Lazy Loding - Web Pack
