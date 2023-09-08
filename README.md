@@ -1,10 +1,11 @@
-
+# Javascript-Performance
 ## TypeScript
 
  - consider using typescript or flow.
  - in an app running in v8 engine when you defined a function without strict type parameters your performance gone go down.
  - always pass a type with your functions.
 
+# Rendering-Performance
 ## Reflow || Layout Trashing
 
 - is happening when your are reading and changing DOM without let it to paint.
