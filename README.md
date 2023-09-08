@@ -64,6 +64,4 @@
  - analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
  - if you are using library import functionality from them with named export
  - and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
- - use dynamic import components with react-loadable which (load it once and use copy then)
- - you can preload next component with react loadable and import()
  - preferd each bundle size is under 300 kilobytes
