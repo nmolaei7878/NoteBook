@@ -1,4 +1,4 @@
- __Dont doing things is faster than doing things__
+# Pro Tip:  __Dont doing things is faster than doing things__
 
 # Javascript-Performance
 ## TypeScript
