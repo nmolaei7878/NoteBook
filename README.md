@@ -1,4 +1,5 @@
-# Pro Tip:  __Dont doing things is faster than doing things__
+### Golden Tip:  __Dont doing things is faster than doing things__
+### silver Tip:  __Doing things later is faster than doing it right now__
 
 # Javascript-Performance
 ## TypeScript
@@ -63,3 +64,4 @@
 ## Analayze bundle size with webpack BundleAnalayzerPluging (visualize bundles)
 ## if you are using library import functionality from them with named export
 and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
+use dynamic import components with react-loadable which (load it once and use copy then)
