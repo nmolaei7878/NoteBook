@@ -24,11 +24,18 @@
  - Layouting and measurments.
  - Painting and craete images.
 
+## Render Piple Line
+ - js -> style -> layout -> paint -> composite.
+ - this is not happening every time.
+
+## Tip 0:
+ - use simple class names to calculate css.
+ - using pesudo elements and calculating in css in more work to do and takes longer.(performance cause)
 
 
 ## Tip 1:
-  - any change to css will trigger paint except changeing opacity or transform.
-  - if changing simple things like color your not reflow just repaint.
+ - any change to css will trigger paint except changeing opacity or transform.
+ - if changing simple things like color your not reflow just repaint.
 
 ## Tip 2:
  - scolling is one the paint causes.
@@ -37,4 +44,5 @@
  - you dont have access to layouting apis to manage those but you can hint them.
  - with will-change property in css.
    - 1 to craete a seperate layout for element that you dont want to repaint.(like sticky header on scrolling).
+   - 2 you have to put back will-change to 'auto'.
  - you can check repainting in devtools -> rendering -> paint flashing
