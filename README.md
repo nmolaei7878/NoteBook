@@ -1,4 +1,4 @@
-#Dont doing things is faster than doing things
+ __Dont doing things is faster than doing things__
 
 # Javascript-Performance
 ## TypeScript
