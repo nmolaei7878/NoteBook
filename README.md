@@ -34,7 +34,7 @@
 
 ## Tip 0:
  - use simple class names to calculate css.
- - using pesudo elements and calculating in css in more work to do and takes longer.(performance cause)
+ - using pesudo elements and calculating in the css is more work to do and takes longer.(performance cause)
 
 
 ## Tip 1:
@@ -60,7 +60,7 @@
     - 1 read from local then check the server.
     - 2 read from server then add to cache use it in offline mode.
     
- - lazy loding & code splitting ( both routes and components ).
+ - lazy loding & code splitting ( both routes and components ) using Suspense.
  - preload components you will need after something.
  - analayze bundle size with webpack BundleAnalayzerPlugin (visualize bundles)
  - if you are using library import functionality from them with named export
