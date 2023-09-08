@@ -59,4 +59,7 @@
  - can controll an implement diffrent cache startegies.
     - 1 read from local then check the server.
     - 2 read from server then add to cache use it in offline mode.
-## Lazy Loding - Web Pack
+## Lazy Loding - Code Splitting
+## Analayze bundle size with webpack BundleAnalayzerPluging (visualize bundles)
+## if you are using library import functionality from them with named export
+and not all of that like :  (import { transform } from 'loasdash') (this will reduce bundle size)
