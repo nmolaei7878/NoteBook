@@ -1,7 +1,7 @@
 
  **Each Branch Contains :**
-  - A ReadMe file for notes of every topic.
-  - Bunch of Code files for every topic.
+- A ReadMe file for notes of every topic.
+- Bunch of Code files for every topic.
 
 
 
