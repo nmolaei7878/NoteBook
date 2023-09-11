@@ -1,4 +1,4 @@
-# DOM & Vanila JS
+## DOM & Vanila JS
 - __Tip 1 :__ Dom and HTML file are not exactly the same.
 - __Tip 2 :__  you can write html files without head and body.(DOM will inject them on the fly for you at start).
 
@@ -31,14 +31,14 @@
 
 - __Tip 12 :__ we can write our own ```Event``` and ```disptach``` it from any where,(pub/sub) like useContext in ReactJS.(make sure dispatching event on 1 element and  listen to that on the same element)(like window object).
 ---
-# Proxy
+## Proxy
 - __Tip  :__ we can use ```Proxy``` for data binding, validation and reactive programming.
 - example ic src.
 ---
-# Router
+## Router
 - __Tip  :__ we can create our SPA routing with help of ```history``` and ```location``` Api and ```'popstate'``` event. 
 ---
-# Web Component
+## Web Component
 
 - web component is resuable html element with custom behavior that needs :
   - ```templte element```: html declartion that will not parsed until we cloned it.
