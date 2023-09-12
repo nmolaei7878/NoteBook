@@ -1,4 +1,4 @@
-# Testing Js With Vitest
+y# Testing Js With Vitest
 
 # General
 - test runner: is tool that will run the test code, execute and display result.
@@ -17,3 +17,15 @@
 - enter watch mode with just 'vitest' flag.
 
 ## Unit Test
+
+
+
+
+
+Writing test for a function that will run other functions or a function in side it self commonly called integration test, because the value of those fns are matter for the curren function,
+
+You. Should and can test for errors
+
+
+toEqual() will make a deep comparison (check properties and values)
+toBe() will just make a shallow comparison (check for pointer refrence)
