@@ -1,5 +1,5 @@
 ### Golden Tip:  __Dont doing things is faster than doing things__
-### silver Tip:  __Doing things later is faster than doing it right now__
+### Silver Tip:  __Doing things later is faster than doing it right now__
 
 # Javascript-Performance
 ## TypeScript
