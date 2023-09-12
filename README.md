@@ -12,7 +12,7 @@
   - ```defer``` keyword will download the file and defer the excution after html parsed.
   - ```async``` keyword will download the file but execute it when its ready after download.
   - in case of using both ``` async defer ``` ,__async__ has priority, on the older browser that don`t support __async__ , __defer__ is fallback for __async__.
-   ---
+## Events
 - __Tip 10 :__ there is an event called ```'DOMContentLoaded'``` on window object that
  will make sure DOM is ready to manipulation and it just called after DOM sctructure created in memory.(this is happening before paint anything)(before user see anything)
   - there is another event called ```'load'``` and that will called after loading all images, stylesheets, fonts.
