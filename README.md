@@ -1,7 +1,7 @@
 
 
 
-, __```JavaScript-TypeScript```__
+ __```JavaScript-TypeScript```__
 , __```OOP```__
 , __```Functional-Programming```__
 , __```Design-Patterns```__
