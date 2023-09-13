@@ -44,7 +44,7 @@
 - add header to your requests like ```curl -H "Autorization: Bearer 12345" [url]```
 
 ### Editors
-- there are usually 2 editors in linux ````vim | nano```
+- there are usually 2 editors in linux ```vim | nano```
 
 ### Package-Management
 - ```apt``` is default package-manager of ubuntu.
