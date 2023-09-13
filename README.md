@@ -4,8 +4,6 @@
 </p>
 
 
-### In this Repository, i had stored codes and docs about different varity of _```Front-End Web Development```_ and _```Software Engineering```_ topis such as:
-
 , __```JavaScript-TypeScript```__
 , __```OOP```__
 , __```Functional-Programming```__
@@ -36,7 +34,7 @@
 , __```ReactJS-NextJS```__
 , __```Component-Libraries```__
 , __```Data-Visualization```__
-, __```State-Managment```__
+, __```State-Management```__
 , __```Test```__
 , __```Design```__
 , __```Design-System```__
