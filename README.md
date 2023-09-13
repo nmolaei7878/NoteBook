@@ -17,6 +17,8 @@
 - combine ```ifconfig grep | 'inet'``` to see lower result.
 - download files using ```wget``` or ```curl```
 - ```!!``` bang operator will run the pervious command
+- run sub-commands using ```$()```
+
 ### Flags
 - use ``-a`` to see hidden files 
 - use ```rm -rf``` to forcely delete files
@@ -47,3 +49,10 @@
 ### Package-Management
 - ```apt``` is default package-manager of ubuntu.
 - ```apt-get``` is old one, ```apt``` is new one. no diffrence.
+
+### Shell Scripts
+
+### Cron-Job
+- you will create cron file and pass a time and a executable file to it, to run it scheduly. while your computer is on.
+- you should give ```chmod +x``` to be executable file.
+- you can pass your executable file in pre-defiend ```/etc/cron.[hourly][etc] ``` or create for your self using ```crontab -e```
