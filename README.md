@@ -11,6 +11,8 @@
 , __```Algorithms```__
 , __```Cloud-Computing```__
 , __```GAPI```__
+, __```Linux```__
+, __```Web3```__
 , __```Network```__
 , __```Source-Controll```__
 , __```Code-Editor```__
