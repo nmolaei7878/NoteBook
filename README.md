@@ -1,7 +1,4 @@
 
-<p align="center">
-  <img src="https://githubcom/nmolaei7878/PartyPlan/assets/-30-20-72/fc6300-e-df7d-4ff8-88dc-60da2e904e-a" />
-</p>
 
 
 , __```JavaScript-TypeScript```__
