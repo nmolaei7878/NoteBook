@@ -1,50 +1,24 @@
-software Engineering: 
 
-js ts OOP fp design pattern Archie pattern
-clean code dsa aws Linux web3 network gitcode editor wasm agile problem solving Containers regex 
+### Commit
+- for each ```commit``` git create a ```SHA1``` as commit id with date, author name and content.
+- each commit will get new ```SHA1```, even if you dont change any thing, date will change.
+- when you change a branch ```HEAD``` will change to the current branch.
+
+### Area
+- Working Area: nothing will be save.
+- Staging Area: git will know whats ready for the next commit. ```git add [filename]```
+- Repository Area: files go to the repository. ```git commit -m 'commit message'```
 
 
-Web Development:
+### Git Stash
+- is usefull while your on branch and have done some work and branch is not ready for commit, and you want to checkout to another branch to do some work. by stashing git will save the changes, and revert branch to the last commit.(like you dont change anything).
 
-gapi wasm Performance  pwa package  manager   module bun security  capability Auth local storage  Render reeact compo lib data visual state management test design dessert system css react lib
+- git stash will save changes in the files, those files tracked allready, if you create a new file use ```git stash --include-untracked```, to stash them.
 
 
- __```JavaScript-TypeScript```__
-, __```OOP```__
-, __```Functional-Programming```__
-, __```Design-Patterns```__
-, __```Architectural-Pattren```__
-, __```Clean-Code```__
-, __```DataStructure```__
-, __```Algorithms```__
-, __```Cloud-Computing```__
-, __```GAPI```__
-, __```Linux```__
-, __```Web3```__
-, __```Network```__
-, __```Source-Controll```__
-, __```Code-Editor```__
-, __```WASM```__
-, __```Agile-Scrum```__
-, __```Performance```__
-, __```Problem-Solving```__
-, __```Containers```__
-, __```PWA```__
-, __```Package-Manager```__
-, __```Module-Bundler```__
-, __```Regular-Expressions```__
-, __```Web-Security```__
-, __```Web-Capabilities```__
-, __```Authentication```__
-, __```Local-Storage```__
-, __```Rendering```__
-, __```ReactJS-NextJS```__
-, __```Component-Libraries```__
-, __```Data-Visualization```__
-, __```State-Management```__
-, __```Test```__
-, __```Design```__
-, __```Design-System```__
-, __```CSS```__
-, __```React-Libraries```__
-
+- stash changes: ```git stash```
+- list changes: ```git stash list```
+- apply stash changes: ```git stash apply```
+- remove last stash: ```git stash drop```
+- remove all stash: ```git stash clear```
+- name stash with easy refrence: ```git stash save 'name'```
