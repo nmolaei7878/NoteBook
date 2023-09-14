@@ -1,4 +1,12 @@
+software Engineering: 
 
+js ts OOP fp design pattern Archie pattern
+clean code dsa aws Linux web3 network gitcode editor wasm agile problem solving Containers regex 
+
+
+Web Development:
+
+gapi wasm Performance  pwa package  manager   module bun security  capability Auth local storage  Render reeact compo lib data visual state management test design dessert system css react lib
 
 
  __```JavaScript-TypeScript```__
