@@ -8,7 +8,7 @@
 - ```git commit --amend ``` is a easy quick way to add changes to the pervious commit.
 
 ### Branch
-- is a new line of development with it`s own working/stagin/repository area.
+- is a new line of development with it`s own working/staging/repository area.
 
 ### HEAD
 - is a way to git knows which branch you currently on and the next parent will be.
@@ -39,7 +39,7 @@
 
 - __Merge__ : create a __new merge commit__ on the feature branch with last commit from __main branch__ and last commit from __feature branch__.
 
-- __Rebase__ : changes the __parent__ of our __feature branch__, from what commit it is to the __last commit__ of __parent branch__. 
+- __Rebase__ : changes the __parent__ of our __feature branch__, from what commit it is to the __last commit__ of __parent branch__. on the feature branch write ```git rebase [main branch]```
 
 
 
