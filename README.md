@@ -1,7 +1,11 @@
 
+
 ### Commit
 - for each ```commit``` git create a ```SHA1``` as commit id with date, author name and content.
 - each commit will get new ```SHA1```, even if you dont change any thing, date will change.
+
+### HEAD
+- is a way to git knows which branch you currently on and the next parent will be.
 - when you change a branch ```HEAD``` will change to the current branch.
 
 ### Area
