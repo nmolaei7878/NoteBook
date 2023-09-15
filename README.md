@@ -51,8 +51,11 @@
 - ```apt-get``` is old one, ```apt``` is new one. no diffrence.
 
 ### Shell Scripts
+- find a path with name and which opertaor like ```which node``` or ```which zsh```
+- with ```#!``` hash bang operator you can set env to run your script, ```#! /snap/bin/node``` run js code.
+- if you want to make a file to be executable ```chmod +x [filename]``` 
 
 ### Cron-Job
 - you will create cron file and pass a time and a executable file to it, to run it scheduly. while your computer is on.
-- you should give ```chmod +x``` to be executable file.
+- you should give ```chmod +x [file name]``` to be executable file.
 - you can pass your executable file in pre-defiend ```/etc/cron.[hourly][etc] ``` or create for your self using ```crontab -e```
