@@ -1,4 +1,9 @@
 
+### General
+- keep you`r local update with ```git fetch```, will download the changes but not change your local.
+- ``pull`` will get changes and merge them to your local.
+- if you fork a project to stay up to date from changes happening after you fork it, use to setup an`` upstream``.
+
 
 ### Commit
 - for each ```commit``` git create a ```SHA1``` as commit id with date, author name and content.
@@ -49,3 +54,10 @@
 - __mixed Reset__ : ``` git reset --mixed [commit-id]```, change the HEAD to the commit id, and copy HEAD to the staging area.
 
 - __Hard Reset__ : ``` git reset --hard [commit-id]```, change the HEAD to the commit id, copy HEAD to the staging area and working area.
+
+
+### Pull Request
+- keep commit history clean and neat.(__squash__)
+- run project tests code.(__to NOT breaking something__)
+- pull in upstream changes.(__Rebase__)
+- send PR.
