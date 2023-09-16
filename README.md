@@ -9,6 +9,13 @@
 - The ``<html>`` element is the root element of an HTML page.
 - The ``<head>`` element contains meta information.
 
+### Inline & Block
+- inline elments are thse el not get width to the end.```<span>, <a>```
+- block element will block the width to the end.```<div>, <p>```
+
+### Web Worker
+- do you`r intensive operation on the background.
+
 ### Semantic HTML
 
 - __Main content of web page__:
