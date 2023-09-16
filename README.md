@@ -12,6 +12,17 @@
 
 - ```git commit --amend ``` is a easy quick way to add changes to the pervious commit.
 
+### Squash
+- squash your commits through interactive rebase or merge.
+  - interactive rebase: ``git rebase -i HEAD~3``, this will create 1 one commit from HEAD to 3 last commit.
+  - in editor ``pick`` the last commit (THE FIRST IN LIST).
+  - ``squash`` the others.
+
+- merge: checkout to the main branch.
+-  ``git merge --squash feature/login``.
+-  after that you have to create commit by your self.   
+
+- normal ``merge`` will create a merge commit by it self, with ``merge --squash`` that will not the case, you have to create merge commit manaually.
 ### Branch
 - is a new line of development with it`s own working/staging/repository area.
 
