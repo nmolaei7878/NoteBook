@@ -4,6 +4,10 @@
 - frame works deal with cross browser compatability internaly.
 - you can setup test env to test your app against Cross browser compatability. 
 
+### HTML BASICS
+- The ``<!DOCTYPE html>`` means this document is an HTML5 document.
+- The ``<html>`` element is the root element of an HTML page.
+- The ``<head>`` element contains meta information.
 
 ### Semantic HTML
 
