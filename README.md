@@ -1,41 +1,22 @@
+# Parsing CSS
+- confilct resolve happens in parsing.
+- when we define ```%``` for an element, in parsing phase that will turns into ``px``. beacuse `50%` in __mobile__ is diffrent from __desktop__.
+
+#### CasCade
+
+- processing diffrent rules that apply to an element, 
+- rules coming from: 
+  - developer (what you define for element).
+  - browser (link elements come with blue color and underline).
+  - user (when define font size in it`s browser)
 
 
- __```JavaScript-TypeScript```__
-, __```OOP```__
-, __```Functional-Programming```__
-, __```Design-Patterns```__
-, __```Architectural-Pattren```__
-, __```Clean-Code```__
-, __```DataStructure```__
-, __```Algorithms```__
-, __```Cloud-Computing```__
-, __```GAPI```__
-, __```Linux```__
-, __```Web3```__
-, __```Network```__
-, __```Source-Controll```__
-, __```Code-Editor```__
-, __```WASM```__
-, __```Agile-Scrum```__
-, __```Performance```__
-, __```Problem-Solving```__
-, __```Containers```__
-, __```PWA```__
-, __```Package-Manager```__
-, __```Module-Bundler```__
-, __```Regular-Expressions```__
-, __```Web-Security```__
-, __```Web-Capabilities```__
-, __```Authentication```__
-, __```Local-Storage```__
-, __```Rendering```__
-, __```ReactJS-NextJS```__
-, __```Component-Libraries```__
-, __```Data-Visualization```__
-, __```State-Management```__
-, __```Test```__
-, __```Design```__
-, __```Design-System```__
-, __```CSS```__
-, __```React-Libraries```__
+### Pesudo Class
+- use to styling like ```.btn:hover```
 
+
+
+
+- ```active``` happen when you click.
+- ```.btn:hover::after``` with this, we will add after when button is hover.
+- ```::after``` or ```::before``` pesodu element is to add content after or before an element.
