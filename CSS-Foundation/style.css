@@ -1,0 +1,11 @@
+
+ul li a {
+    background-color: pink;
+}
+
+ul > li > a{
+    color: white;
+}
+
+
+
