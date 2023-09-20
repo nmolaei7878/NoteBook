@@ -2,11 +2,9 @@
 ### Display : 
 - we can change default behavior of HTML dispaly with display property:
 
-  - inline: Displays an element as an inline element (like ). Any height and width properties will have no effect.
+  - inline: Displays an element as an inline element, Any height and width properties will have no effect.
 
-  - block: Displays an element as a block element (like
-
-). It starts on a new line, and takes up the whole width.
+  - block: Displays an element as a block element, It starts on a new line, and takes up the whole width.
 
   - inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
 
@@ -18,7 +16,7 @@
 > normal document flow means where you define it.
 > RTLB : right, top, left, bottom.
 
-- Static: default value, where you defined it, RTLB don't work.
+- Static: default value, where you defined it, `RTLB` don't work.
 - Relative: where you defined it, RTLB works here.
 - Absolute: out of where you defined it, RTLB works here. Positioned to nearest - - - Relative parent. 
 - Fixed: out of where you define it, RTLB works here, Positioned to viewport and stay with viewport, also seen after scroll.
