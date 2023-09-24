@@ -184,8 +184,65 @@ Vendors/
 - if you define your sass file without `_` at begining of your file name, they will end up into they`r own css files.
 
 
-#### Variables
+#### variables
 
 - start with `$` sign.
 - you can define `local variables` in `{}`.
 - define `global variables` out of `{}` and use it any where.
+
+
+#### string interpolation
+
+- `#{}` this is syntax
+- `#{hue(green)}` is passing a function to string interpolation result in string value
+
+
+#### mixin
+
+- for re-use of style.
+ ```css
+@mixin somename {
+ 'define your styles here'
+}
+.otherclass {
+  @include somemixin
+}
+```
+
+- you can define your mixin with default arguments like
+```css
+@mixin mixinname($opacity: 0.5){
+opacity: $opacity
+}
+.someclass {
+@include mixinname()
+or
+@include mixinname(0.8)
+}
+```
+
+- pass a declartion block like
+
+```css
+@mixin mixinname($color){
+color: $color
+  .inner{
+    @content
+  }
+}
+.someclass {
+@include mixinname(#cf9){
+  color: red
+}
+}
+```
+
+
+
+### if statement
+
+ ```css
+@if something > somethingelse {
+    'your styles goes here'
+}
+```
