@@ -131,7 +131,18 @@ child/parent
 
 
 ### BEM
-- naming style for css classes: `__box-something`
+- css architecture: `__box-something`
+  - block: a block or component that is independent from other things.
+  - element: dont have meaning standalone, a part of a block.
+  - modifier: a flag to change apperance.
+
+```css
+.textfield{
+  &__input{}
+  &__label{}
+  &__validation-error{}
+}
+```
 
 ### Media-Query
 - `@max-width`: viewport less than.
@@ -162,6 +173,18 @@ use color in other files like: ` var(--primary-color)`
 
 
 ### SASS 
+
+
+#### config
+
+- install `npm install node-sass`
+- add script `"compile:sass": "node-sass main.scss style.css -w"`
+
+> __import VS include__ :  `@import` imports a whole file, `@include` includes a @mixin piece of code.
+
+> __extend VS mixin__  : mixin will copy all of your style in include block, but extend will inherit and not copy them.
+
+
 - sass architecture: 
 Base/
 Component/
@@ -236,13 +259,35 @@ color: $color
 }
 }
 ```
+#### extend
+```css
+.foo {
+    'your styles'
+}
+.otherclass{
+  @extend .foo;
+}
+```
+> always use `@extend` with placeholder `%classname{}`
 
 
-
-### if statement
+#### if statement
 
  ```css
 @if something > somethingelse {
     'your styles goes here'
+}
+```
+> we have `@each`, `@for`, `map` and `list` in __sass__
+> you can define your theme in map-data structure
+
+#### functions
+
+```css
+@function double($x){
+  @return $x * 2;
+}
+.someclass {
+  border-width: double(3)
 }
 ```
