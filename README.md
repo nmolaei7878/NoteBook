@@ -291,3 +291,10 @@ color: $color
   border-width: double(3)
 }
 ```
+
+
+### Responsive Images
+
+- give `width` and `height` in html to tell browser reserve the size, if you dont when image got downloaded you will see a jump in browser.
+
+
