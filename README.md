@@ -1,50 +1,13 @@
-software Engineering: 
 
-js ts OOP fp design pattern Archie pattern
-clean code dsa aws Linux web3 network gitcode editor wasm agile problem solving Containers regex 
+- run a docker image and keep it interactive `docker run -it [image-name]`, other wise it just run it and close it.
+- run a docker image and keep it interactive and give it name to terminate it with the given name`docker run -it --name yourname [image-name]`, other wise it just run it and close it.
+- terminate the the docker image `docker kill [name] or [id]` and after that to clear logs `docker rm [name] or [id]`
+- list the running containers `docker ps`
+- run a docker container in the background `docker run -dit [image-name]`
+- build a container from your dockerfile with a name `docker build --tag or -t [name] [address to your docker file]`
+- if you want to access a node app container that you build, run it using `docker run -it --publish 3000:3000`
+
+- add version to your images like `docker build -t [name]:1 `
 
 
-Web Development:
-
-gapi wasm Performance  pwa package  manager   module bun security  capability Auth local storage  Render reeact compo lib data visual state management test design dessert system css react lib
-
-
- __```JavaScript-TypeScript```__
-, __```OOP```__
-, __```Functional-Programming```__
-, __```Design-Patterns```__
-, __```Architectural-Pattren```__
-, __```Clean-Code```__
-, __```DataStructure```__
-, __```Algorithms```__
-, __```Cloud-Computing```__
-, __```GAPI```__
-, __```Linux```__
-, __```Web3```__
-, __```Network```__
-, __```Source-Controll```__
-, __```Code-Editor```__
-, __```WASM```__
-, __```Agile-Scrum```__
-, __```Performance```__
-, __```Problem-Solving```__
-, __```Containers```__
-, __```PWA```__
-, __```Package-Manager```__
-, __```Module-Bundler```__
-, __```Regular-Expressions```__
-, __```Web-Security```__
-, __```Web-Capabilities```__
-, __```Authentication```__
-, __```Local-Storage```__
-, __```Rendering```__
-, __```ReactJS-NextJS```__
-, __```Component-Libraries```__
-, __```Data-Visualization```__
-, __```State-Management```__
-, __```Test```__
-, __```Design```__
-, __```Design-System```__
-, __```CSS```__
-, __```React-Libraries```__
-
+- to check how much each step take size `docker history --human --format "{{.CreatedBy}}: {{.Size}}" [image-name]`
