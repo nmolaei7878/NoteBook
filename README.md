@@ -31,10 +31,7 @@
 
 - __Tip 12 :__ we can write our own ```Event``` and ```disptach``` it from any where,(pub/sub) like useContext in ReactJS.(make sure dispatching event on 1 element and  listen to that on the same element)(like window object).
 ---
-## Proxy
-- __Tip  :__ we can use ```Proxy``` for data binding, validation and reactive programming.
-- example ic src.
----
+
 ## Router
 - __Tip  :__ we can create our SPA routing with help of ```history``` and ```location``` Api and ```'popstate'``` event. 
 ---
