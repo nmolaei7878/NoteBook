@@ -10,4 +10,26 @@
 
 - when you use memo on component, if values are passed by refrenced `"object"` use it with useMemo or useCallback, other wise thats not gone work.
 
-- when you use `context api` and wrap it in the root level of your app, in every update/dispatch you make, every thing wraped with your context will re-render, because every time you use your useContext, in the context.provider value={{items}} you are creating a new object, while data is the same as before the object is new and refrence to that object is different from last one, to avoid that you have to create another context
+
+#### Context API
+- when you use `context api` and wrap it in the root level of your app, in every update you make, every thing wraped with your context will re-render, because every time you use your useContext, in the context.provider value={{items}} you are creating a new object, while data is the same as before the object is new and refrence to that object is different from last one, to avoid that you have to create another context
+
+- `context` api is like hidden prop, when you use `useContext` and update something, all component wrap with `context.provider` will get a new prop, and new prop cause re-render, to avoid that you have to use 2 context, 1 for things that change(state) and 1 for thing that dont change(function to change state) like:
+```javascript
+const ItemsContext = useContext({})
+const ActionContext = useContext({})
+
+const ItemProvider = ({children}) => {
+    const [items, dispatch] = useReducer(reducer, initialItem)
+
+    return (
+        <ActionContext.Provider value={dispatch}>
+            <ItemsContext.Provider value={items}>{children}</ItemsContext.Provider>
+        </ActionContext.Provider>
+    )
+}
+
+```
+- the order matter, we wrap our state(Items) with dispatch beacuse dispatch will never change.
+- any time you pass `<ActionContext.Provider value={{items}}>` with double bracket you create a new object.
+- any time you pass `<ActionContext.Provider value={{users, items}}>`. in this senario you have to create a third context.
