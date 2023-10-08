@@ -66,3 +66,24 @@
  - if you are using library import functionality from them with ```named export```
  - and not all of that like :  ```import { transform } from 'loasdash'``` (this will reduce bundle size)
  - preferd each bundle size is under ```300``` kilobytes
+
+### Resource Hint
+
+####Preconnect`
+
+The `preconnect` directive allows the browser to **setup early connections before an HTTP request is actually sent to the server**. This includes DNS lookups, TLS negotiations, TCP handshakes. This in turn eliminates roundtrip latency and saves time for users.
+
+#### Prerendering
+
+ is very similar to prefetching in that it gathers resources that the user may navigate to next. The difference is that prerendering actually **renders the entire page in the background**, all the assets of a document. Below is an example.
+
+#### prefetch
+
+ is a low priority resource hint that allows the browser to **fetch resources in the background** (idle time) that might be needed later, and **store them in the browser's cache**. Once a page has finished loading it begins downloading additional resources and if a user then clicks on a prefetched link, it will load the content instantly. There are three different types of prefetching, link, DNS, and prerendering which we will go into more below.
+
+
+#### preload
+
+Generally it is best to `preload` your most important resources such as images, CSS, JavaScript, and font files. This is not to be confused with browser preloading in which only resources declared in HTML are preloaded. The `preload` directive actually overcomes this limitation and **allows resources which are initiated via CSS and JavaScript to be preloaded and define when each resource should be applied**.
+
+`preload` is different from `prefetch` in that it focuses on fetching a resource for the current navigation. `prefetch` focuses on fetching a resource for the next navigation. It is also important to note that `preload` does not block the window's `onload` event.
