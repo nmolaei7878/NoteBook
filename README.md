@@ -33,3 +33,49 @@ const ItemProvider = ({children}) => {
 - the order matter, we wrap our state(Items) with dispatch beacuse dispatch will never change.
 - any time you pass `<ActionContext.Provider value={{items}}>` with double bracket you create a new object.
 - any time you pass `<ActionContext.Provider value={{users, items}}>`. in this senario you have to create a third context.
+
+### Concurrent Rendering
+- concurrent rendering added to react 18.
+- `useTransition`: with this we tell react do this when you can (not urgent)
+	- one use case is when your trying filter alist while user type in an input.
+	- updating input is more urgent than filtering list
+- `useDeferredValue` is also a way to tell react an update in not urgent, but this one wraps the value and `useTransition` will wrap the state.
+
+### Import & Code Splitting
+- __Static Import__ `import somthing from 'something.js'` is static import, will import the whole module, js engine will fetch and execute it immedeatly, but the trade of is static import will increase the bundle size.
+- __Named Import__ `import {something} from 'something.js'` is name import and it just import that function from module not anything else.
+- __Dynamic Import__ we can load components with `dynamic import`using `suspense` and `lazy` ,with dynamic import we create another bundle for our lazy load components automatically without touching our module bundler (webpack).
+	- you can name your webpack chunk with webpack comment like : 
+	- `const Component = React.lazy(()=> import (/*webpackChunkName: "your given name"*/ './components/yourcomponent'))`.
+	- this approach is good for initial load time, due to reducing bundle size.
+	- dont lazy load component that your showing on initial render.
+	 - you have to care about `layout shift` with dynamic import.
+
+- __import on visibility__ : we can load components when they are visible to the user, with `react-intersection-observer`.
+
+```javascript
+ `const {ref, inView} = useInView()`
+
+ <div ref={ref}>
+	 <Suspense fallback={<div/>}>
+		 {InView && <YourComponent />}
+	 </Suspense>
+ </div>
+```
+
+- __Route Base Splitting__ : you can lazy load a route with `Suspense` and `lazy`.
+
+- __Prefetch__: we can tell the browser to download something, when browser is ideal and based on the user-story we know we need something in certain point, with this we tell browser to fetch something and cache it and when we need it read it from cache.
+	- we can prefetch resource explicitly in `head` of `html` like:
+	- `<link rel='prefetch' href="./about.bundle.js"/>`, (if you dont know the bundle name use webpack magic comment like below)
+	- or in webpack
+	- `const About = React.lazy(()=> import(/*webpackPrefetch: true*/ "about.js"))`
+	- use full if you combine it with lazy loading routes.
+- implementation is like prefetch just use `preload` instead of 'prefetch'
+
+> __Preload__ VS __Prefetch__ : 
+> you can use both to download a chunk.bundle, images, fonts, script, css.
+> with `prefetch` you hint the browser you need some resources, fetch or not depends on the browser with low priority in the background.
+> with `preload` browser will get your resources, forcebliy.
+
+- you can preload thing with `useHover` hook.
