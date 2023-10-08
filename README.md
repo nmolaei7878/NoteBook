@@ -1,50 +1,67 @@
-software Engineering: 
+# React Patterns
 
-js ts OOP fp design pattern Archie pattern
-clean code dsa aws Linux web3 network gitcode editor wasm agile problem solving Containers regex 
+### Container - Presentation
+- create a `container component` to do things like fetching data.
+- create a `presentation component` of that task is show the UI.
+- container will render presentation component in it self, and presentation component receive data thorough prop.
 
+### Higher Order Component
+- wraps another component and pass logic to it.
 
-Web Development:
+- create a `withLoader` HOC for component that should fetch data and show loading.
 
-gapi wasm Performance  pwa package  manager   module bun security  capability Auth local storage  Render reeact compo lib data visual state management test design dessert system css react lib
+- HOC withLoader
+```javascript
+const withloader = (Component,url) => {
 
+return (props) => {
 
- __```JavaScript-TypeScript```__
-, __```OOP```__
-, __```Functional-Programming```__
-, __```Design-Patterns```__
-, __```Architectural-Pattren```__
-, __```Clean-Code```__
-, __```DataStructure```__
-, __```Algorithms```__
-, __```Cloud-Computing```__
-, __```GAPI```__
-, __```Linux```__
-, __```Web3```__
-, __```Network```__
-, __```Source-Controll```__
-, __```Code-Editor```__
-, __```WASM```__
-, __```Agile-Scrum```__
-, __```Performance```__
-, __```Problem-Solving```__
-, __```Containers```__
-, __```PWA```__
-, __```Package-Manager```__
-, __```Module-Bundler```__
-, __```Regular-Expressions```__
-, __```Web-Security```__
-, __```Web-Capabilities```__
-, __```Authentication```__
-, __```Local-Storage```__
-, __```Rendering```__
-, __```ReactJS-NextJS```__
-, __```Component-Libraries```__
-, __```Data-Visualization```__
-, __```State-Management```__
-, __```Test```__
-, __```Design```__
-, __```Design-System```__
-, __```CSS```__
-, __```React-Libraries```__
+const [data, setData] = useState()
 
+useEffect(() => {
+
+const data = fetch(url)
+
+setData(data)
+
+}, [])
+
+if (!data) {
+
+return <Loading>loading</Loading>
+
+}
+return <Component {...props} data={data} />
+}
+}
+export default withloader
+```
+
+- Component
+```javascript
+function Component(props){
+return <></>
+export withLoader(Component, url)
+}
+```
+# React Architectures
+### Classic Architecture
+- pages
+- components
+- store
+- assets
+- service
+
+- this is class Architecture and it is good for pet project and small project.
+- it is hard to refactor and maintain this kind of Architecture, because they are highly dependent to each other with and module.
+
+### Modular Architecture
+- UI
+- Components
+- Modules 
+- Pages
+
+- UI layer is for highly reusable pisces of ui like: input, button without business logic.
+- Component layer is combination of ui pisces, can hold base logic, it is like higher abstraction for UI layer.
+- Modules every thing in here should be compeletly independent from other thing and every module should have `index.js` file to `import` and `export`. define everything related to this module in its own like `helper fns`, `constants`, `api layer`
+- Pages layer: every element in the pages directory is a combination of different modules,The key difference between pages and modules is logic thickness
