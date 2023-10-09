@@ -15,6 +15,13 @@
   - when we use methods on __```primitive```s__ js will create it for us ```obejct``` shape no need for us to create ```object``` shape of __```primitive```__ on first place thats bad practice and pre-optimise.
   - if you hve an ``````object`````` and you want to get the underlying ```primitive``` value out you can use ```valueOf()``` method.
 
+## Self
+- Unless set elsewhere, the value of `self` is `window`.
+- JavaScript lets you access any property `x` of `window` as simply `x`, instead of `window.x`.
+- `self` is really `window.self`, which is different to `this`.
+  - If you're using a function that is executed in the global scope and is not in strict mode, this defaults to window.
+  - If you're using a function in a different context, this will refer to that context, but self will still be `window`.
+- in `service worker` senario it is refer to `WorkerGlobalScope.self`
 ## Coercion
 
 - we have 2 types of coercion in __javascript__ __Imlicit__ and __Explecit__.
