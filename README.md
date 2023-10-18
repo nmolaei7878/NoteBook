@@ -1,4 +1,6 @@
+# This is my personal notebook to write from things i have learned mostly Frontend-Masters.
 
+## To see my Explored topics __Change Branches__.
 
  __```JavaScript-TypeScript```__
 , __```OOP```__
