@@ -1,5 +1,5 @@
 <h1 align="center">
- Never Stop Learning
+This is a refrence repo containing Code snippets, Notes and Documents extracted from different sources of old & new technologies about Front-End Web Development 
 </p> 
 <p align="center">
  <img width=500 height=300 src="https://www.angularjsindia.com/blog/wp-content/uploads/2022/01/front-end-development-roadmap.jpg"/>
