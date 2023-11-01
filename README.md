@@ -1,4 +1,4 @@
-# This is my personal notebook to write from things i have learned mostly Frontend-Masters.
+# This is my personal notebook to write docs and code snippets from various source.
 
 ## To see my Explored topics __Change Branches__.
 
