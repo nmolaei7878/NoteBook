@@ -1,6 +1,4 @@
-# This is my personal notebook to write docs and code snippets from various source.
-
-## To see my Explored topics __Change Branches__.
+# Explore Different topics on Branches.
 
  __```JavaScript-TypeScript```__
 , __```OOP```__
