@@ -54,4 +54,16 @@ const ComponentA = () => {
 
 # Redux
 
+The whole global state of your app is stored in an object tree inside a single store.
+
+To change the store state, you need an action, an object describing new state, then dispatch it to the store.
+
+To specify how state gets updated in response to an action, you write pure reducer functions that calculate a new state based on the old state and the action.
+
+Actions are just objects. As far as Redux is concerned, out of the box actions must be plain objects, and they must have a type property
+
+Action creator will add one layer abstraction around an action.
+
+
+
 # Redux Toolkit
