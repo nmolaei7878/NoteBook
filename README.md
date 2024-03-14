@@ -55,6 +55,10 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 - functions are special type of `object`s, they have `call` method on them.
 
+## Higher Order Function
+
+- is function that we can pass callback to it, in order to make some part of functionallity reuseable, like a map function that recives a callback and execute it for each element.
+
 ## Hoisting
 
 - hoisting is just term and there is nothing such hoist exsist in `javascript`.
@@ -98,6 +102,8 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 - when our js program starts it goes through our code line by line top to bottom this behavior name is `executation thread`.
 - second thing to do is create a `local memory space` for storing variables that defiend in a function.
+  > tip 1 : if you create a array in your fn, your storing it in fn local memory space, and by returning it you store a new variable in global memory space.
+  > tip 2 : if you use a variable in your function that not exsist in the same scope, js engine goes up and tries to find it in the parent scope, do it until reaches the global scope, if it couldnt find it in global scope, global scope creates a variable with the same name and assign undifiend to it, then pass it down.
 - these 2 behavior togheter are `execution context`
 - js will create `global executation context` 1 time for our entire program, and creates a new execution context for every function call.
 
