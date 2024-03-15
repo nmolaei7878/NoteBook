@@ -54,6 +54,7 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 ## Functions
 
 - functions are special type of `object`s, they have `call` method on them.
+- after function execution done, everythins in that fn get deleted except return value.
 
 ## Higher Order Function
 
@@ -96,7 +97,13 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 ## Closure
 
 - `closure` is a term where `function` can remember and access the outer `variables`. (`lexical scope`).
+- lexical scope means where you defiend it.
+- if you define a `function outer` and a func inside of outer named `function inner` and inside of inner function, you defiend variables, and return the inner function, your passing inner function to global memory space with backpack of defiend variables, so when you want to use returned fn, you have access to those variables by running inner function, even though execution context of outer function is gone.
+- we bring the data with us from where function born.
+- this behavior is beacuse js is lexical or static scope language, not dynamic scope.
 - but just the declaration not values of them.
+  > in a simple manner closure means js will remember the variables that you defiend in a function, and pass it as backpack where you use it.
+  > we can see backpack in chrome dev tool as `[[scope]]`.
 
 ## Execution Context
 
