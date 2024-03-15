@@ -133,8 +133,6 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 - a promise has 3 different state initally they are in `pend` state after async operation they will fullfield wether with `rejected` or `resolved`.
 
-> fetch fn is implemented differently than promise it has value and fulfiled array. fetch automatically pass value after data comes to fullfilled array, and when your callback to `.then()` it recives the value there and execute your callback.
-
 #### Callback
 
 - the problem with the callback or callback hell is not about prymid shape of code, it`s about trust issues like not running my callback to many times, or to early.
@@ -144,3 +142,15 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 #### Thunk
 
 - is pattern, a time independent wrapper around a value
+
+#### Event Loop, Task Queue, Microtask Queue, Call Stack
+
+> for maintaining the order and priority of async operation
+
+> priority is always with microtasks if there was no microtask event loop will dequeue from task queue
+
+- there are 2 queues, 1 call stask and 1 event loop.
+- event loop job is to check if call stack is empty, dequeue task from queues with the order of first microtask queue and then task queue. and put them on callstack.
+
+> Microtask: Promise callbacks and UI update(reactjs set state): then, catch, finally.
+> Task Queue: setTimeout, setInterval, requestAnimationFrame, click events, keyboard events.
