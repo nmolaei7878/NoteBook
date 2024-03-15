@@ -121,7 +121,19 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 ## Async
 
-- time is the most complex factor in your program
+- time is the most complex factor in your program.
+- js is single thread, due to this fact when we want to fetch data from a remote server we use async feature to not block the thread.
+- features like: settimeout, fetch, dom, console, all of them are browser features, not the javascript, browser will run this kind of feature with help of `callback queue` and the `event loop`.
+
+#### Promise
+
+> promise create a bridge between `browser` and `js-engine`, to track what happens to your async operation.
+
+- when you set timer with settimeout that will goes to web browser and when call stack is empty thats gone run your callback,but you cant track it, with `promises` that goes to web browser and immidiatly return a place holder object called `promise`, that has 2 callback init `resolve` and `reject`, with promise you can follow up what happend to your async operation.
+
+- a promise has 3 different state initally they are in `pend` state after async operation they will fullfield wether with `rejected` or `resolved`.
+
+> fetch fn is implemented differently than promise it has value and fulfiled array. fetch automatically pass value after data comes to fullfilled array, and when your callback to `.then()` it recives the value there and execute your callback.
 
 #### Callback
 
