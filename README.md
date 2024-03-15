@@ -154,3 +154,5 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 > Microtask: Promise callbacks and UI update(reactjs set state): then, catch, finally.
 > Task Queue: setTimeout, setInterval, requestAnimationFrame, click events, keyboard events.
+
+> the async function it self goes to microtask queue and the callback we pass to it for example to show data goes to task queue, with this behavior first we get the data, then show it, beacuse of where we queue our functions.
