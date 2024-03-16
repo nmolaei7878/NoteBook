@@ -141,6 +141,7 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 - is of combination of `Promise` and `Generator` to write async code like sync code.
 - it can solve problem of inversion of controll.
+- js will change every `async function` to `generator function` whch means `async/await` is just a syntax.
 - example of fetching data with `async/await`
 - 1. call the `.next()` on generator fn to start calling api.
 - 2. pause the generator fn to execute the rest of our code **to not blocking the thread**
@@ -148,6 +149,7 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 
 > tip 1: only if Promise fullfilled with Resolve we have data in error case we have to handle it using `try/catch`
 > tip 2: beacuse we cant access Promise instead of `.then` or `.catch` we have to handle errors using `try/catch`.
+> tip 3: each `await` keyword means `yield` which means `pause` on generator function.
 
 #### Callback
 
