@@ -119,7 +119,7 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 - for js to follow up where we are and to know which function is executing right now it creates a call stack.
 - our 0 index of call stack is always `global executation context` and on top of that it will store other function calls.
 
-## Async
+## Async Operation
 
 - time is the most complex factor in your program.
 - js is single thread, due to this fact when we want to fetch data from a remote server we use async feature to not block the thread.
@@ -132,6 +132,22 @@ for non-`primitive` data types set of proccess will going on to coerice them.
 - when you set timer with settimeout that will goes to web browser and when call stack is empty thats gone run your callback,but you cant track it, with `promises` that goes to web browser and immidiatly return a place holder object called `promise`, that has 2 callback init `resolve` and `reject`, with promise you can follow up what happend to your async operation.
 
 - a promise has 3 different state initally they are in `pend` state after async operation they will fullfield wether with `rejected` or `resolved`.
+
+#### Generator
+
+- is function that can be paused and resume, defiend using `function *`, paused with `yield` keyword and resume with `.next()`.
+
+#### Async/Await
+
+- is of combination of `Promise` and `Generator` to write async code like sync code.
+- it can solve problem of inversion of controll.
+- example of fetching data with `async/await`
+- 1. call the `.next()` on generator fn to start calling api.
+- 2. pause the generator fn to execute the rest of our code **to not blocking the thread**
+- 3. on data arrvies or `(Promise Resolved)` do the rest of our code. **showing data**
+
+> tip 1: only if Promise fullfilled with Resolve we have data in error case we have to handle it using `try/catch`
+> tip 2: beacuse we cant access Promise instead of `.then` or `.catch` we have to handle errors using `try/catch`.
 
 #### Callback
 
