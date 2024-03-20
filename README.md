@@ -1,23 +1,49 @@
-<p align="center">
- <img width=500 height=300 src="https://www.angularjsindia.com/blog/wp-content/uploads/2022/01/front-end-development-roadmap.jpg"/>
-</p>
+# OOP Paradiam JS
 
-<h2 align="center">
-This is a Refrence Repository containing Code snippets, Notes and Documents extracted from different sources of old & new technologies about Front-End Web Development 
-</h2> 
+> in oop world we want to keep our state and behavior in the same place like a package, some kind of bundle
+>
+> 1. Solution: is to add our methods to the same object that our state lives, with this approach we reach to our goal but we are copying the same functionallity agina and again. imagine a product object with behavior to add to basket.
 
- 
-[__```JavaScript```__](https://github.com/nmolaei7878/NoteBook/tree/JS-HandBook)
-[__```Vanila JS```__](https://github.com/nmolaei7878/NoteBook/tree/JS-Vanila)
-[__```Architectures```__](https://github.com/nmolaei7878/NoteBook/tree/Architectures-%26-Pattterns)
-[__```Design-Patterns```__](https://github.com/nmolaei7878/NoteBook/tree/JS-Design-Patterns)
-[__```Source-Controll GIT```__](https://github.com/nmolaei7878/NoteBook/tree/Source-Controll-Git)
-[__```Web Performance```__](https://github.com/nmolaei7878/NoteBook/tree/JS-Web-Performance)
-[__```React Performance```__](https://github.com/nmolaei7878/NoteBook/tree/React-Performance)
-[__```Docker```__](https://github.com/nmolaei7878/NoteBook/tree/Docker)
-[__```Service-Wroker```__](https://github.com/nmolaei7878/NoteBook/tree/Sevice-Worker)
-[__```ViTest```__](https://github.com/nmolaei7878/NoteBook/tree/JS-Vitest)
-[__```CSS```__](https://github.com/nmolaei7878/NoteBook/tree/CSS)
-[__```Browser&HTML```__](https://github.com/nmolaei7878/NoteBook/tree/Browser-%26-HTML)
-[__```VS-Code```__](https://github.com/nmolaei7878/NoteBook/tree/VS-Code)
-[__```Linux```__](https://github.com/nmolaei7878/NoteBook/tree/Linux-%26-Command-Line)
+```javascript
+const userObject = {
+  name: "jack",
+  login: function () {
+    // login functionallity
+  },
+};
+userObject.login();
+```
+
+> 2. Solution: we can use the native behavior of JS to add our functionality to the prototype object, every object created with our factory function will automatically get the same prototype.
+
+```javascript
+// a factory function to create object and methods on it
+function CreateUser(name) {
+  // this will add our functionallity to prototype of object and return an empty object
+  const newUser = Object.Create(FunctionStore);
+  newUser.name = name;
+  return newUser;
+}
+
+const FunctionStore = {
+  login: function () {
+    // login functionallity
+  },
+};
+
+const user1 = CreateUser("Jack");
+user1.login();
+```
+
+> js will first look at object to find the method to execute it, if couldnt find it goes up the prototype chain and tries to find the method and execute it.
+
+- is a way of coding, that both state(propertis) and behavior(methods) lives togheter
+- a technic to add property to a prototype of an object is to use `Object.Create()`.
+- with a fctory function that will return a object with given parameter, you can add functionality to ** proto ** of object, in this way you can add fns to parent of object and every object that will created as child of that or with the same factory fn can use that.
+- you have to pass your fns or properties to `Object.Create(Params in here)`, this function will return you an empty object, but add params to `__ proto __`.
+  > `__ proto __` is hidden property but you can see it in chrome dev tools
+- what happens is when you want to invoke a function on an object that not exsist on object it slef, js by nature go and tries to find that fn in `__ proto __`, and beacuse we add our fn to proto it will find and execute it.
+
+- by default all objects have a ** proto ** preperty that is linking to big ibject called `Object.protoype` full of usefull methods.
+
+# Functional JS
