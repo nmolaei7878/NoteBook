@@ -5,6 +5,14 @@
 - **`primitive`** types are store in **stack memory**.
 - `object`, `function`, `array` are **refrence** type.
 - **refrence** types are accessible via **pointers** from **stack memory** and actual value get store in **heap memory**.
+  > in js variables dont have type, values do.
+
+## typeof Operator
+
+> `typeof` operator, will return type of a variable in `""` string shape
+
+- variable without a value will result in `"undifiend"`
+- 'mamad' is `"string"`,1 is `"number"`,true/false is `"boolean"`,{} is `"object"`,func(){} is `"function"`,string is `"string"`
 
 ## Boxing
 
