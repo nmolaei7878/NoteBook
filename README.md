@@ -1,28 +1,20 @@
-<p align="center">
- <img width=500 height=300 src="https://www.angularjsindia.com/blog/wp-content/uploads/2022/01/front-end-development-roadmap.jpg"/>
-</p>
+# Core Web Vital
 
-<h2 align="center">
-This is a Refrence Repository containing Code snippets, Notes and Documents extracted from different sources of old & new technologies about Front-End Web Development 
-</h2>
+### LCP
 
-> please follow the steps:
+- how much it take to see biggest content on your website
+- most of the time its about big images.
+- with minimize and optimize images, code Spliting, Prefetch, Preload we can get a good number in `Largest Contentful Paint`.
 
-1. write your note in `.md` files
-2. provide an example in `index.js` file then link the file
-3. [a relative link to code line 118](index.js?#L118)
+### CLS
 
-   [**`JavaScript`**](https://github.com/nmolaei7878/NoteBook/tree/JS-HandBook)
-   [**`Vanila JS`**](https://github.com/nmolaei7878/NoteBook/tree/JS-Vanila)
-   [**`Architectures`**](https://github.com/nmolaei7878/NoteBook/tree/Architectures-%26-Pattterns)
-   [**`Design-Patterns`**](https://github.com/nmolaei7878/NoteBook/tree/JS-Design-Patterns)
-   [**`Source-Controll GIT`**](https://github.com/nmolaei7878/NoteBook/tree/Source-Controll-Git)
-   [**`Web Performance`**](https://github.com/nmolaei7878/NoteBook/tree/JS-Web-Performance)
-   [**`React Performance`**](https://github.com/nmolaei7878/NoteBook/tree/React-Performance)
-   [**`Docker`**](https://github.com/nmolaei7878/NoteBook/tree/Docker)
-   [**`Service-Wroker`**](https://github.com/nmolaei7878/NoteBook/tree/Sevice-Worker)
-   [**`ViTest`**](https://github.com/nmolaei7878/NoteBook/tree/JS-Vitest)
-   [**`CSS`**](https://github.com/nmolaei7878/NoteBook/tree/CSS)
-   [**`Browser&HTML`**](https://github.com/nmolaei7878/NoteBook/tree/Browser-%26-HTML)
-   [**`VS-Code`**](https://github.com/nmolaei7878/NoteBook/tree/VS-Code)
-   [**`Linux`**](https://github.com/nmolaei7878/NoteBook/tree/Linux-%26-Command-Line)
+- wanted or un-wanted layout shifts.
+- for example user load our website, see a paragraph and start to reading it, then our hero image will load on top of paragraph, and Layout Shift happens, user will gone the paragraph and now see an image,
+- with place holders and pre-defined sizes we can reduce `Cumulative Layout Shift`.
+
+### FID
+
+- how much it take for our website to be interactive to our users.
+- this will happen in React.js or client side rendering fast
+- on the other hand this will take more time on SSR/SSG like Next.js beacuse of hydration.
+- minimize and optimize js will `increace First Input Delay`.
