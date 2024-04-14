@@ -1,18 +1,27 @@
 ## Types
 
 - we have 2 category of data types in **javascript** which are `primitive` type and `refrence` type.
-- `string, number, `Boolean`, null, undifiend, symbol` and `bigInt` as **`primitive`** types they are accessbile via **value**.
+- `string, number, Boolean, null, undifiend, symbol` and `bigInt` as **`primitive`** types they are accessbile via **value**.
 - **`primitive`** types are store in **stack memory**.
 - `object`, `function`, `array` are **refrence** type.
 - **refrence** types are accessible via **pointers** from **stack memory** and actual value get store in **heap memory**.
   > in js variables dont have type, values do.
+  > `function, array` they are not offcial types in js they are subtype of `object`
 
-## typeof Operator
+## [typeof Operator](index.js?#L1)
 
 > `typeof` operator, will return type of a variable in `""` string shape
 
 - variable without a value will result in `"undifiend"`
 - 'mamad' is `"string"`,1 is `"number"`,true/false is `"boolean"`,{} is `"object"`,func(){} is `"function"`,string is `"string"`
+  > to realize array type you use utility func `Array.isArray([your array])`, this will return true if provided value be an array.
+  > spec says: if you want unset an object assing it to `null`, and for primitive type assing them to `undifiend`
+
+## Emptines
+
+- **undefiend**: it has been initialized but currently, is undefiend.
+- **undeclared**: never been declared any where.
+- **unintialize**:(block scope variables) it has been initialized but currently, is undefiend.
 
 ## Boxing
 
