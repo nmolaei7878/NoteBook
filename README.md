@@ -8,7 +8,7 @@
 ## creating a web-worker
 ```javascript
 var worker = new Worker('path to your worker file')
-worker.addEventListener('message, function onMessage(event) {
+worker.addEventListener('message', function onMessage(event) {
   console.log(event.data)
   })
 ```
