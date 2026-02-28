@@ -3,9 +3,11 @@
 </p>
 
 <h2 align="center">
-This is a Refrence Repository containing Code snippets, Notes and Documents extracted from different sources of old & new technologies about Front-End Web Development 
+This is a Refrence Repository containing Code snippets, Notes and Documents extracted from different sources of old & new technologies about Front-End Web Development
 </h2>
-
+<h1 align="center">
+ Explore Branches
+</h1>
 > please follow the steps:
 
 1. write your note in `.md` files
